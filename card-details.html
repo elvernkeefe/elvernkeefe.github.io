@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repayment</title>
+    <link rel="stylesheet" href="card-details-styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="details.html" id="backBtn"><img src="back button.png" alt="Menu"></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Repay Loan</h1>
+        <form id="repaymentForm">
+            <label for="name">Name on Card:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="amount">Amount to Repay:</label>
+            <input type="number" id="amount" name="amount" required>
+            
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+            
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+
+    <script src="carddetailsscript.js"></script>
+</body>
+</html>

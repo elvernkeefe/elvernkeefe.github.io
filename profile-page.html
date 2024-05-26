@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile Details</h1>
+        <form id="profileForm">
+            <section class="profile-details">
+                <h2>Profile Picture</h2>
+                <div class="profile-pic-container">
+                    <img id="profilePicPreview" src="profile button.png" alt="Profile Picture" onclick="document.getElementById('profilePic').click()">
+                    <input type="file" id="profilePic" name="profilePic" accept="image/*" style="display: none;" onchange="uploadImage(event)" required>
+                </div>
+                <h2>Identification</h2>
+                <label>Full Name:
+                    <input type="text" name="full name" value="Eddy Jones" required>
+                </label>
+                <label for="dob">Date of Birth:
+                    <input type="date" id="dob" name="dob" value="1990-01-01" required>
+                </label>
+                <label>Social Security Number:
+                    <input type="text" name="ssn" value="AAA-GG-SSSS" required>
+                </label>
+                <label>Passport Number:
+                    <input type="text" name="passport" value="14CV28142" required>
+                </label>
+                <label>Driver's License:
+                    <input type="text" name="license" value="1234567890" required>
+                </label>
+
+                <h2>Contact Information</h2>
+                <label>Phone Number:
+                    <input type="tel" name="phone" value="0423 888 193" required>
+                </label>
+                <label>Email Address:
+                    <input type="email" name="email" value="dodo@gmail.com" required>
+                </label>
+                <label>Home Address:
+                    <input type="text" name="address" value="13 Bowling St, Chippendale, NSW, 2008" required>
+                </label>
+
+                <h2>Employment and Finances</h2>
+                <label>Employment Status:
+                    <input type="text" name="employment" value="Unemployed" required>
+                </label>
+                <label>Current Income:
+                    <input type="number" name="income" value="25" required>
+                </label>
+                <label>Assets:
+                    <input type="number" name="assets" value="0" required>
+                </label>
+                <label>Liabilities:
+                    <input type="number" name="liabilities" value="100" required>
+                </label>
+                <label>Expenses:
+                    <input type="number" name="expenses" value="10" required>
+                </label>
+
+                <h2>Upload Documents</h2>
+                <label>Upload ID Document:
+                    <input type="file" name="idDocument" required>
+                </label>
+                <label>Upload Pay Slips:
+                    <input type="file" name="paySlips" required>
+                </label>
+                <label>Upload Bills:
+                    <input type="file" name="bills" required>
+                </label>
+            </section>
+            
+            <div class="button-group">
+                <button type="submit">Save Changes</button>
+                <button type="button" onclick="confirmCancel();">Discard Changes</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="profile-script.js"></script>
+</body>
+</html>

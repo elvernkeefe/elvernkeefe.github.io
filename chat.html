@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Lender</title>
+    <link rel="stylesheet" href="chat-styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="mainpage.html" id="backBtn"><img src="back button.png" alt="Back"></a></li>
+        </ul>
+    </nav>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="mainpage.html">Home</a>
+        <a href="apply.html">Apply</a>
+        <a href="manage.html">Manage</a>
+        <a href="chat.html">Chat</a>
+    </div> 
+
+    <div id="main">
+        <div class="chat-container">
+            <div class="chat-sidebar">
+                <h2>Lenders</h2>
+                <ul id="lenderList">
+                    <!-- Lenders will be populated here -->
+                </ul>
+            </div>
+            <div class="chat-content">
+                <div class="chat-header">
+                    <h1 id="chatHeader">Chat with Lender</h1>
+                </div>
+                <div class="chat-box" id="chatBox">
+                    <!-- Messages will appear here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Type your message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="chat-script.js"></script>
+</body>
+</html>

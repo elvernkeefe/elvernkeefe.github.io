@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Empower Finance</title>
+  <link rel="stylesheet" href="mainpagestyles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-menu">
+      <li><a href="javascript:void(0);" id="menuBtn" onclick="openNav()"><img src="menu button.png" alt="Menu"></a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0);" onclick="toggleDropdown('currencyMenu')"><img src="currency button.png" alt="Currency"></a>
+        <div id="currencyMenu" class="dropdown-content">
+          <a href="#">USD</a>
+          <a href="#">EUR</a>
+          <a href="#">RMB</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0);" onclick="toggleDropdown('languageMenu')"><img src="language button.png" alt="Language"></a>
+        <div id="languageMenu" class="dropdown-content">
+          <a href="#">English</a>
+          <a href="#">Spanish</a>
+          <a href="#">Chinese</a>
+        </div>
+      </li>
+      <li><a href="javascript:void(0);"><img src="audio button.png" alt="Screen Reader"></a></li>
+    </ul>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="mainpage.html">Home</a>
+      <div class="dropdown">
+        <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown('applyMenu')">Apply</a>
+        <div id="applyMenu" class="dropdown-content">
+          <a href="apply.html">Apply Loan</a>
+          <a href="apply-cc.html">Apply Credit Card</a>
+        </div>
+      </div>
+      <a href="manage.html">Manage</a>
+      <a href="chat.html">Chat</a>
+    </div>
+    
+    <div class="user-profile">
+        <a href="profile-page.html"><img src="profile button.png" alt="Profile"></a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="background-container">
+      <div class="company-info">
+        <img src="EmpowerFinance Revised.png" alt="Company Logo" class="logo">
+      </div>
+    </div>
+  </section>
+
+  <div class="video-section">
+    <h2 class="video-title">Tutorial Video</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="testimonial-section">
+    <div class="testimonial-card">
+        <img src="testimonial pict2.jpg" alt="Person's Name" class="testimonial-image">
+        <div class="testimonial-content">
+            <h3>Young Adult from Rural Area</h3>
+            <p>"Growing up in a rural area, access to financial services was always limited. EmpowerFinance changed that for me. They helped me get a loan to pursue further education and improve my job prospects. Their platform was easy to use, and the customer service was excellent."</p>
+            <p class="testimonial-detail">— John Miller, Part-Time Worker</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="testimonial-section">
+    <div class="testimonial-card">
+        <img src="testimonial pict3.jpg" alt="Person's Name" class="testimonial-image">
+        <div class="testimonial-content">
+            <h3>Person with Disabilities</h3>
+            <p>"EmpowerFinance provided me with a personal loan when I needed to purchase specialized equipment due to my disability. Traditional banks turned me down, but EmpowerFinance understood my situation and offered the support I needed. Their empathy and professionalism have been a blessing."</p>
+            <p class="testimonial-detail">— Lisa Brown, Unemployed</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="testimonial-section">
+    <div class="testimonial-card">
+        <img src="testimonial pict.jpg" alt="Person's Name" class="testimonial-image">
+        <div class="testimonial-content">
+            <h3>Low-Income Family</h3>
+            <p>"EmpowerFinance gave us the opportunity to improve our home when no other lender would. As a low-income family, we often felt ignored by traditional financial institutions. EmpowerFinance listened to our needs and provided the financial help we needed. We're very grateful for their assistance."</p>
+            <p class="testimonial-detail">— Tasha Williams, Caregiver</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="faq-container">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Q.</span> How do I update my personal information?
+        </div>
+        <div class="faq-answer">
+            <span>A.</span> To update your personal information, log in to your account, go to the "Profile" section, and edit your details as needed. Remember to save your changes.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Q.</span> How does EmpowerFinance protect my personal information?
+        </div>
+        <div class="faq-answer">
+            <span>A.</span> EmpowerFinance uses advanced encryption and security measures to protect your personal and financial information. We are committed to maintaining the highest standards of data privacy and security.
+        </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+          <span>Q.</span> What should I do if I have trouble making a payment?
+      </div>
+      <div class="faq-answer">
+          <span>A.</span> If you encounter any issues with repayment, please contact our customer support team as soon as possible. We can discuss alternative payment arrangements or provide assistance to help you manage your payments effectively. This can be done by accessing our menu and navigating to the ‘Chat’ tab.
+      </div>
+    </div>
+  </div>
+  <script src="mainpage.js"></script>
+</body>
+</html>

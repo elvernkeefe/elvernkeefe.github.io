@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FFFFFF;
+    background-color: #273D66;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 10px;
+}
+
+.navbar-menu a img {
+    height: 70px;
+}
+
+.container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    color: #273D66;
+}
+
+h1 {
+    color: #273D66;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loan-summary {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.loan-summary th, .loan-summary td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.loan-summary th {
+    background-color: #f2f2f2;
+    width: 30%;
+}
+
+.progress-bar-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 20px;
+    background: #4CAF50;
+}
+
+.progress-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #273D66;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.repay-loan-button, .view-schedule-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #273D66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.repay-loan-button:hover, .view-schedule-button:hover {
+    background-color: #1c2a49;
+}
+
+.not-published {
+    color: red !important;
+}
+
+.checkmark {
+    color: #4CAF50;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.uploaded-text {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-menu li {
+        margin: 5px 0;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .timeline-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background: #e0e0e0;
+        z-index: -1;
+        transform: translateX(-50%);
+    }
+}

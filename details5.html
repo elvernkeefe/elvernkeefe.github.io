@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Details</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="manage.html" id="backBtn"><img src="back button.png" alt="Back"></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Loan Summary</h1>
+        <table class="loan-summary">
+            <tr>
+                <th>Loan Amount</th>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <th>Lender</th>
+                <td>ABC Com</td>
+            </tr>
+            <tr>
+                <th>Loan Term</th>
+                <td>
+                    Duration: 25 months<br>
+                    Start Date: 2024-01-04<br>
+                    End Date: 2026-02-04
+                </td>
+            </tr>
+            <tr>
+                <th>Monthly Payment Amount</th>
+                <td>
+                    Fixed Monthly Payment: $20<br>
+                    Due Date: 4th of each month
+                </td>
+            </tr>
+            <tr>
+                <th>Key Loan Metrics</th>
+                <td>
+                    Total Repayable Amount: $500<br>
+                    Breakdown: Principal repayments over the term<br>
+                    Next Payment Due: <span class="not-published">Not Published Yet</span><br>
+                    Amount Due: $20<br>
+                    Days Remaining: <span class="not-published">Not Published Yet</span><br>
+                    Final Payment Date: <span class="not-published">Not Published Yet</span><br>
+                    Final Balance: $20
+                </td>
+            </tr>
+            <tr>
+                <th>Terms and Agreements</th>
+                <td>
+                    <p class="not-published">Terms and Agreements not Uploaded</p>
+                    <input type="file" id="termsUpload" name="termsUpload">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

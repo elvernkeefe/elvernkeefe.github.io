@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Loan</title>
+    <link rel="stylesheet" href="loan-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apply for a Loan</h1>
+        <form id="loanForm">
+            <section class="loan-details">
+                <h2>Applicant Details</h2>
+                <label>Full Name:
+                    <input type="text" name="full_name" required>
+                </label>
+                <label>Date of Birth:
+                    <input type="date" name="dob" required>
+                </label>
+                <label>Email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>Phone Number:
+                    <input type="tel" name="phone" required>
+                </label>
+                <label>Address:
+                    <input type="text" name="address" required>
+                </label>
+            </section>
+
+            <section class="loan-details">
+                <h2>Loan Details</h2>
+                <label>Loan Amount Desired:
+                    <input type="number" name="loan_amount" required>
+                </label>
+                <label>Repayment Deadline:
+                    <input type="date" name="repayment_deadline" required>
+                </label>
+                <label>Reason for Loan:
+                    <textarea name="loan_reason" rows="4" required></textarea>
+                </label>
+            </section>
+
+            <section class="financial-details">
+                <h2>Financial Details</h2>
+                <label>Employment Status:
+                    <input type="text" name="employment_status" required>
+                </label>
+                <label>Annual Income:
+                    <input type="number" name="annual_income" required>
+                </label>
+                <label>Monthly Expenses:
+                    <input type="number" name="monthly_expenses" required>
+                </label>
+                <label>Assets:
+                    <input type="number" name="assets" required>
+                </label>
+                <label>Liabilities:
+                    <input type="number" name="liabilities" required>
+                </label>
+            </section>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="button" onclick="confirmCancel();">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="loanapply.js"></script>
+</body>
+</html>

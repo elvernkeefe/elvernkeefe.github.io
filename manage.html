@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage</title>
+    <link rel="stylesheet" href="manage-styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="mainpage.html" id="backBtn"><img src="back button.png" alt="Back"></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Manage Loans</h1>
+        <div class="section">
+            <h2 class="subheading">Application Progress</h2>
+            <div class="loan-container">
+                <div class="loan-card">
+                    <h3>Loan Amount: $10,000</h3>
+                    <p>Application Date: 2023-05-15</p>
+                    <h4>Loan Application Progress</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <div class="progress-details">
+                        <p>Applied 15 May 2023</p>
+                        <p>Reviewed 20 May 2023</p>
+                        <p>Result 25 May 2023</p>
+                    </div>
+                    <a href="details2.html" class="view-details-link">View loan details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="subheading">Approved Loans</h2>
+            <div class="loan-container">
+                <div class="loan-card">
+                    <h3>Loan Amount: $1,000</h3>
+                    <p>Next Payment Due: 2024-06-04</p>
+                    <h4>Repayment Progress</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <div class="progress-details">
+                        <p>$0</p>
+                        <p>$1000</p>
+                    </div>
+                    <a href="details.html" class="view-details-link">View loan details</a>
+                </div>
+            </div>
+
+            <div class="loan-container">
+                <div class="loan-card">
+                    <h3>Loan Amount: $500</h3>
+                    <p>Next Payment Due: <span class="not-published">Not Published Yet</span></p>
+                    <h4>Repayment Progress</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-details">
+                        <p>$0</p>
+                        <p>$500</p>
+                    </div>
+                    <a href="details5.html" class="view-details-link">View loan details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="subheading">Repaid Loans</h2>
+            <div class="repaid-loan-container">
+                <div class="repaid-loan-card">
+                    <h3>Loan Amount: $5,000</h3>
+                    <p>Completed Repayment Date: 2023-12-01</p>
+                    <div class="completed-status">
+                        <span class="completed-text">✔ COMPLETED</span>
+                        <p>This loan has been fully repaid.</p>
+                        <a href="details3.html" class="view-details-link">View loan details</a>
+                    </div>
+                </div>
+                <div class="repaid-loan-card">
+                    <h3>Loan Amount: $8,000</h3>
+                    <p> Completed Repayment Date: 2023-11-15</p>
+                    <div class="completed-status">
+                        <span class="completed-text">✔ COMPLETED</span>
+                        <p>This loan has been fully repaid.</p>
+                        <a href="details4.html" class="view-details-link">View loan details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="managescript.js"></script>
+</body>
+</html>

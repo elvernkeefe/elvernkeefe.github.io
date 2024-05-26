@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Credit Card</title>
+    <link rel="stylesheet" href="apply-cc-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apply for a Credit Card</h1>
+        <form id="creditCardForm">
+            <section class="card-details">
+                <h2>Card Details</h2>
+                <label>Card Type:
+                    <select name="cardType" required>
+                        <option value="basic">Basic</option>
+                        <option value="premium">Premium</option>
+                        <option value="business">Business</option>
+                    </select>
+                </label>
+                <label>Credit Limit Desired:
+                    <input type="number" name="creditLimit" required>
+                </label>
+            </section>
+
+            <section class="personal-details">
+                <h2>Personal Information</h2>
+                <label>Full Name:
+                    <input type="text" name="fullName" required>
+                </label>
+                <label>Date of Birth:
+                    <input type="date" name="dob" required>
+                </label>
+                <label>Social Security Number:
+                    <input type="text" name="ssn" required>
+                </label>
+                <label>Email Address:
+                    <input type="email" name="email" required>
+                </label>
+                <label>Phone Number:
+                    <input type="tel" name="phone" required>
+                </label>
+            </section>
+
+            <section class="employment-details">
+                <h2>Employment Information</h2>
+                <label>Employment Status:
+                    <input type="text" name="employmentStatus" required>
+                </label>
+                <label>Annual Income:
+                    <input type="number" name="income" required>
+                </label>
+                <label>Employer Name:
+                    <input type="text" name="employer" required>
+                </label>
+            </section>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="button" onclick="confirmCancel();">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="apply-cc-script.js"></script>
+</body>
+</html>

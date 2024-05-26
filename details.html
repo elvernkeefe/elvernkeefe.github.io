@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Summary</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="manage.html" id="backBtn"><img src="back button.png" alt="Back"></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Loan Summary</h1>
+        <table class="loan-summary">
+            <tr>
+                <th>Loan Amount</th>
+                <td>$1,000</td>
+            </tr>
+            <tr>
+                <th>Lender</th>
+                <td>ABC Com</td>
+            </tr>
+            <tr>
+                <th>Loan Term</th>
+                <td>
+                    Duration: 60 months<br>
+                    Start Date: 2024-01-04<br>
+                    End Date: 2029-01-04
+                </td>
+            </tr>
+            <tr>
+                <th>Monthly Payment Amount</th>
+                <td>
+                    Fixed Monthly Payment: $20<br>
+                    Due Date: 4th of each month
+                </td>
+            </tr>
+            <tr>
+                <th>Key Loan Metrics</th>
+                <td>
+                    Total Repayable Amount: $1,200<br>
+                    Breakdown: Principal repayments over the term<br>
+                    Next Due Date: 2024-06-04<br>
+                    Amount Due: $20<br>
+                    Days Remaining: 9<br>
+                    Final Payment Date: 2029-01-04<br>
+                    Final Balance: $20
+                </td>
+            </tr>
+            <tr>
+                <th>Terms and Agreements</th>
+                <td>
+                    <div class="terms-uploaded">
+                        <span class="checkmark">✔</span>
+                        <span class="uploaded-text">Terms and Agreements Uploaded</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="button-group">
+            <button class="repay-loan-button" onclick="location.href='repay-loan.html'">Repay Loan</button>
+            <button class="view-schedule-button" onclick="location.href='repayment-schedule.html'">View Repayment Schedule</button>
+        </div>
+    </div>
+
+    <script src="details.js"></script>
+</body>
+</html>
